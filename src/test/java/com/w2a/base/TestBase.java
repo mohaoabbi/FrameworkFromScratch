@@ -13,6 +13,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -30,6 +32,7 @@ public class TestBase {
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
 
+	@SuppressWarnings("deprecation")
 	@BeforeSuite
 	public void setUp() {
 
@@ -92,7 +95,24 @@ public class TestBase {
 			driver = new FirefoxDriver();
 			log.debug("Firefox Launched !!!");
 
+		} else if (Config.getProperty("browser").equalsIgnoreCase("ie")) {
+				  
+				  DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			        capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			        
+			        System.setProperty("webdriver.ie.driver",
+							System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
+				
+				
+			         driver = new InternetExplorerDriver(capabilities);
+				      
+			         //driver= new InternetExplorerDriver();
+			         
+			         log.debug("Internet Explorer browser launched !!!!");
+
 		}
+
+		
 
 		driver.get(Config.getProperty("testsiteurl"));
 		log.debug("Navigated to:" + Config.getProperty("testsiteurl"));
