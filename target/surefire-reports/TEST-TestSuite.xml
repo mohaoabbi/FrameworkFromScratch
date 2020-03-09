@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="4.374" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\bin"/>
+    <property name="java.vm.version" value="25.241-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mdkil\eclipse-workspace\DataDrivenFramework"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\mdkil\eclipse-workspace\DataDrivenFramework"/>
+    <property name="java.runtime.version" value="1.8.0_241-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\mdkil\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\mdkil\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf6480052473317674467.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_241\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_241/bin/server;C:/Program Files/Java/jre1.8.0_241/bin;C:/Program Files/Java/jre1.8.0_241/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\mdkil\AppData\Local\Android\Sdk\platform-tools;C:\Users\mdkil\AppData\Local\Android\Sdk\tools\bin;C:\Users\mdkil\AppData\Local\Android\Sdk\tools;C:\Users\mdkil\AppData\Local\Microsoft\WindowsApps;;C:\WINDOWS\System32;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\mdkil"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="mdkil"/>
+    <property name="java.class.path" value="C:\Users\mdkil\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.14.0.20191209-1923\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_241\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_241"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_241\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_241\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_241\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\mdkil\eclipse-workspace\DataDrivenFramework\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="loginAsBankManager" classname="com.w2a.testcases.BankManagerLoginTest" time="2.071">
+    <failure message="Login not Successful" type="java.lang.AssertionError">java.lang.AssertionError: Login not Successful
+	at org.testng.Assert.fail(Assert.java:93)
+	at com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:21)
+</failure>
+    <system-out><![CDATA[chrome
+//button[contains(text(),'Bank Manager Login')]
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (devpinoyLogger).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 3010
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1583780721.212][WARNING]: Timed out connecting to Chrome, retrying...
+Mar 09, 2020 3:05:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1583780724.677][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780724.790][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780724.907][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.019][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.123][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.226][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.330][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.533][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.636][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.739][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780725.898][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.008][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.116][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.219][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.321][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.423][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.534][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.639][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.842][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780726.946][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.111][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.250][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.368][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.527][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.629][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.731][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780727.835][SEVERE]: Timed out receiving message from renderer: 0.100
+[1583780730.903][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
+  </testcase>
+  <testcase name="addCustomer" classname="com.w2a.testcases.AddCustomerTest" time="2.303">
+    <failure message="Cannot find elements when the selector is null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the selector is null
+	at org.openqa.selenium.By$ByCssSelector.<init>(By.java:422)
+	at org.openqa.selenium.By.cssSelector(By.java:116)
+	at com.w2a.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:22)
+]]></failure>
+    <system-out><![CDATA[4
+]]></system-out>
+  </testcase>
+</testsuite>
