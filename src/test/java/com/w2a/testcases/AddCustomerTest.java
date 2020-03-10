@@ -17,7 +17,7 @@ public class AddCustomerTest extends TestBase {
 		driver.findElement(By.cssSelector(OR.getProperty("addCustBtn_CSS"))).click();
 		driver.findElement(By.cssSelector(OR.getProperty("firstname_CSS"))).sendKeys(firstName);
 		driver.findElement(By.xpath(OR.getProperty("lastname_XPATH"))).sendKeys(lastName);
-		;
+		
 		driver.findElement(By.cssSelector(OR.getProperty("postcode_CSS"))).sendKeys(postCode);
 		driver.findElement(By.cssSelector(OR.getProperty("addbtn_CSS"))).click();
 
